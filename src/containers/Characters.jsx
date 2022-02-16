@@ -1,10 +1,11 @@
 import React from "react";
+import CharactersList from "../components/CharactersList";
 
 const Characters = () => {
     return(
-        <div>
-            <p>Hello Characters</p>
-        </div>
+       <section>
+           <CharactersList/>
+       </section>
     );
 }
 
