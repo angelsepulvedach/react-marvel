@@ -3,6 +3,7 @@ import axios from "axios";
 import Character from "./Character";
 import Error from "./Error";
 import Loader from "./Loader";
+import "../assets/styles/Components/CharactersList.css";
 
 const CharactersList = () => {
     const [characters,setCharacters] = useState([]);
@@ -28,16 +29,21 @@ const CharactersList = () => {
     }
 
     return(
-        <div>
-            {loading ? (
-                <Loader/>
-            ): error ? (
-                <Error/>
-            ): (
-                characters.map((character) =>(
-                    <Character key={character.id} data={character}/>
-                ))
-            )}
+        <div className="container-layout">
+
+              <div className="characters-list">
+                  {loading ? (
+                      <Loader/>
+                  ): error ? (
+                      <Error/>
+                  ): (
+
+                      characters.map((character) =>(
+                          <Character key={character.id} data={character}/>
+                      ))
+
+                  )}
+              </div>
         </div>
     );
 };

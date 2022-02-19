@@ -3,7 +3,7 @@ import CharactersList from "../components/CharactersList";
 
 const Characters = () => {
     return(
-       <section>
+       <section className="row">
            <CharactersList/>
        </section>
     );

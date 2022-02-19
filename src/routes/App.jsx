@@ -4,6 +4,8 @@ import "../assets/styles/App.css";
 import Characters from "../containers/Characters";
 import Favorites from "../containers/Favorites";
 import Layout from "../components/Layout";
+import Error404 from "../components/Error404";
+//const Favorites = lazy(() => import("../containers/Favorites"));
 
 const App = () => (
     <BrowserRouter>
@@ -11,6 +13,7 @@ const App = () => (
           <Switch>
             <Route exact path="/favorites" component={Favorites}/>
             <Route exact path="/" component={Characters}/>
+              <Route path="*" component={Error404}/>
           </Switch>
         </Layout>
     </BrowserRouter>

@@ -1,0 +1,9 @@
+.container-layout{
+    min-height: calc(100vh - 100px - 10px) !important;
+}
+.characters-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

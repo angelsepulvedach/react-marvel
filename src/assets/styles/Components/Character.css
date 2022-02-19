@@ -1,0 +1,38 @@
+.card-section{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(255,255,255,.12);
+}
+
+.card-header-character{
+    margin-top:-40px;
+    height: 120px;
+    background: linear-gradient(-90deg,#8D1F20,#AF262A);
+    box-shadow: 1px 5px 15px #a2a2a2;
+}
+
+.character-details-star {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.character-image{
+    width:120px;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+.favorite {
+    fill: #faf76a;
+}
+
+.favorite:hover {
+    fill: #ffffff;
+}
+
+.noFavorite {
+    fill: red;
+}
+
+.noFavorite:hover {
+    fill: #faf76a;
+}
